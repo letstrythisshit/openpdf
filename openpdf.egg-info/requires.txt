@@ -1,0 +1,15 @@
+pypdfium2<5,>=4.25
+pikepdf<10,>=8
+pdfminer.six>=20221105
+Pillow<11,>=10
+reportlab<5,>=4
+fonttools>=4.40
+
+[dev]
+pytest>=7
+pytest-cov>=4
+ruff>=0.1
+mypy>=1.5
+
+[ocr]
+pytesseract>=0.3.10
