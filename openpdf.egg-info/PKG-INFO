@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: openpdf
+Version: 0.1.0
+Summary: A commercially-free drop-in replacement for PyMuPDF (fitz)
+Author: OpenPDF Contributors
+License: MIT
+Project-URL: Repository, https://github.com/letstrythisshit/openpdf
+Keywords: pdf,pymupdf,fitz,text-extraction,pdf-rendering
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Multimedia :: Graphics
+Requires-Python: <3.12,>=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pypdfium2<5,>=4.25
+Requires-Dist: pikepdf<10,>=8
+Requires-Dist: pdfminer.six>=20221105
+Requires-Dist: Pillow<11,>=10
+Requires-Dist: reportlab<5,>=4
+Requires-Dist: fonttools>=4.40
+Provides-Extra: ocr
+Requires-Dist: pytesseract>=0.3.10; extra == "ocr"
+Provides-Extra: dev
+Requires-Dist: pytest>=7; extra == "dev"
+Requires-Dist: pytest-cov>=4; extra == "dev"
+Requires-Dist: ruff>=0.1; extra == "dev"
+Requires-Dist: mypy>=1.5; extra == "dev"
